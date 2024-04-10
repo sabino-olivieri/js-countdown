@@ -4,9 +4,47 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .flex {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+.clock {
+    font-size: 2rem;
+    
+
+}
+
+.upscale {
+    animation: countdown 1s;
+    animation-iteration-count: infinite;
+}
+
+.opacity {
+    opacity: 0;
+}
+
+.new-year {
+    animation: new-year 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes countdown {
+    0% {transform: scale(100%);
+        opacity: 100;}
+    75% {transform: scale(400%);
+        opacity: 100;}
+    100% {opacity: 0;}
+}
+
+@keyframes new-year {
+    from {transform: scale(300%);}
+    to {transform: scale(400%);}
 }
