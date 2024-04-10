@@ -4,6 +4,8 @@ const clockElem = document.querySelector(".clock");
 clockElem.innerHTML = startTime;
 clockElem.classList.add("upscale");
 
+const bodyElem = document.querySelector("body");
+
 
 const time = setInterval(function() {
 
@@ -19,6 +21,7 @@ const time = setInterval(function() {
         clockElem.classList.remove("upscale");
         clockElem.innerHTML = "Buon Anno";
         clockElem.classList.add("new-year");
+        bodyElem.classList.add("bg-newyear");
         clearInterval(time);
     }
 }, 1000);

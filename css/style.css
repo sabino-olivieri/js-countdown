@@ -6,9 +6,10 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(128, 128, 128);
 }
 
-.flex {
+.flex { 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,6 +35,16 @@ body {
     animation: new-year 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    color: white;
+    -webkit-text-stroke: -2px;
+    -webkit-text-stroke-color: black;
+}
+
+.bg-newyear {
+    background-image: url(../img/fireworks.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @keyframes countdown {
